@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@import "@angular/cdk/overlay-prebuilt.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "";
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --card: #ffffff;
+  --card-foreground: #0a0a0a;
+  --popover: #ffffff;
+  --popover-foreground: #0a0a0a;
+  --primary: #178a55;
+  --primary-foreground: #ffe6e7;
+  --secondary: #f1f1f9;
+  --secondary-foreground: #17171a;
+  --muted: #f1f1f9;
+  --muted-foreground: #757581;
+  --accent: #f1f1f9;
+  --accent-foreground: #17171a;
+  --destructive: #e32929;
+  --destructive-foreground: #fafafa;
+  --border: #e1e1e6;
+  --input: #e1e1e6;
+  --ring: #178a55;
+  --radius: 1rem;
+  color-scheme: light;
+}
+
+.dark {
+  --background: #120d0d;
+  --foreground: #f2f2f2;
+  --card: #1a1616;
+  --card-foreground: #f2f2f2;
+  --popover: #171717;
+  --popover-foreground: #f2f2f2;
+  --primary: #1a9e65;
+  --primary-foreground: #1a331a;
+  --secondary: #2a2a41;
+  --secondary-foreground: #fafafa;
+  --muted: #262626;
+  --muted-foreground: #a2a2a7;
+  --accent: #2a2a22;
+  --accent-foreground: #fafafa;
+  --destructive: #991515;
+  --destructive-foreground: #fef0f0;
+  --border: #2a2a41;
+  --input: #2a2a41;
+  --ring: #14734b;
+  color-scheme: dark;
+}
