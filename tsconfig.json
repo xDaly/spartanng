@@ -104,9 +104,6 @@
       "@spartan-ng/ui-skeleton-helm": [
         ".\\src/common/ui-skeleton-helm/src/index.ts"
       ],
-      "@spartan-ng/ui-slider-helm": [
-        ".\\src/common/ui-slider-helm/src/index.ts"
-      ],
       "@spartan-ng/ui-sonner-helm": [
         ".\\src/common/ui-sonner-helm/src/index.ts"
       ],

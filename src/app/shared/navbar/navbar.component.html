@@ -1,0 +1,66 @@
+<nav class="flex items-center justify-between px-6 py-3 bg-white shadow">
+  <!-- Left Section - Logo and Links -->
+  <div class="flex items-center space-x-8">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="/assets/logo.png" alt="WeLoad Logo" class="h-[21px]" />
+    </div>
+
+    <!-- Links -->
+    <div class="flex items-center space-x-4">
+      <button hlmBtn class="py-2 px-4 text-white bg-gray-800 rounded-md shadow">
+        <icon [iconName]="'overview'" [height]="'22px'" [width]="'22px'" />
+        <span class="ml-2"> Overview </span>
+      </button>
+      <button hlmBtn class="py-2 px-4 text-gray-700 bg-gray-200 rounded-md">
+        <icon [iconName]="'browse'" [height]="'22px'" [width]="'22px'" />
+        <span class="ml-2">Browse Loads</span>
+      </button>
+      <button hlmBtn class="py-2 px-4 text-gray-700 bg-gray-200 rounded-md">
+        <icon [iconName]="'analytics'" [height]="'22px'" [width]="'22px'" />
+        <span class="ml-2">Analytics</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Right Section - Notifications, Profile and Dropdown -->
+  <div class="flex items-center space-x-6">
+    <!-- Notification and Bell Icons -->
+    <div class="flex items-center space-x-3">
+      <button hlmBtn class="p-2 bg-green-100 rounded-full">
+        <icon [iconName]="'message'"></icon>
+      </button>
+      <button hlmBtn class="p-2 bg-green-100 rounded-full">
+        <icon [iconName]="'bell'"></icon>
+      </button>
+    </div>
+
+    <!-- User Profile and Dropdown -->
+    <div>
+      <div [brnMenuTriggerFor]="menu"  class="flex items-center space-x-2">
+        <hlm-avatar>
+          <img
+            src="https://www.auto-infos.fr/mediatheque/2/9/2/000282292_600x400_c.jpg"
+            alt="spartan logo. Resembling a spartanic shield"
+            hlmAvatarImage
+          />
+          <span class="text-white bg-destructive" hlmAvatarFallback>RG</span>
+        </hlm-avatar>
+        <div>
+          <p class="text-sm font-medium">Shipbec Inc</p>
+          <p class="text-xs text-gray-500">Admin</p>
+        </div>
+      </div>
+      <!-- Dropdown Menu -->
+      <ng-template #menu>
+        <hlm-menu class="w-48">
+          <hlm-menu-group>
+            <button hlmMenuItem>Profile</button>
+            <button hlmMenuItem>Settings</button>
+            <button hlmMenuItem>Logout</button>
+          </hlm-menu-group>
+        </hlm-menu>
+      </ng-template>
+    </div>
+  </div>
+</nav>
